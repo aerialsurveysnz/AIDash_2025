@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "name": "PowerCo_Wellington_2025 - Imagery_Centres",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Project": "PGRM3232",
+                "Company_Name": "PowerCo",
+                "SN_No": "SN14392",
+                "Survey_Typ": "Imagery",
+                "Proj_Name": "PowerCo Wellington",
+                "OrthoGSD_m": 0.20,
+                "Area": 8078.4240268174763,
+                "Percentage_Coverage": 100.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    175.771233742585906,
+                    -40.950522258846576
+                ]
+            }
+        }
+    ]
+}

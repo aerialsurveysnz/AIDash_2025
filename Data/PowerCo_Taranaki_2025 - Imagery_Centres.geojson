@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "name": "PowerCo_Taranaki_2025 - Imagery_Centres",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Project": "PGRM3232",
+                "Company_Name": "PowerCo",
+                "SN_No": "SN14390",
+                "Survey_Typ": "Imagery",
+                "Proj_Name": "PowerCo Taranaki",
+                "OrthoGSD_m": 0.20,
+                "Area": 6545.93
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    174.409202258309108,
+                    -39.344490486239046
+                ]
+            }
+        }
+    ]
+}

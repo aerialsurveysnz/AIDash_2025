@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "name": "PowerCo_BOP_2025 - Imagery_Centres",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Project": "PGRM3232",
+                "Company_Name": "PowerCo",
+                "SN_No": "SN14389",
+                "Survey_Typ": "Imagery",
+                "Proj_Name": "PowerCo Coro & BOP",
+                "OrthoGSD_m": 0.20,
+                "Area": 9574.1415805450542,
+                "Percentage_Coverage": 100.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    175.794126399840792,
+                    -37.546664611973299
+                ]
+            }
+        }
+    ]
+}
