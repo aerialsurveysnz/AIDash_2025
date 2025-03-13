@@ -429,7 +429,7 @@
         source: 'CoverageSource5',
         paint: {
           'fill-color': '#FF0000',
-          'fill-opacity': 0.0
+          'fill-opacity': 0.5
         }
       });
 
@@ -471,9 +471,9 @@
                               "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
                               "<b>Sun Angle: </b> 30 Degrees</br>" +
                               "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
-                              "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" ;
-                              //"<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
-                              //"<b>Coverage To Date: </b>" + featureCoverage.properties.Percentage_Coverage + "%</b></br>";
+                              "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
+                              "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
+                              "<b>Coverage To Date: </b>" + featureCoverage.properties.Percentage_Coverage + "%</b></br>";
 
           var popupContent = document.createElement('div');
           popupContent.innerHTML = description;
@@ -508,7 +508,7 @@
         source: 'ProjectArea6',
         paint: {
           'fill-color': 'Pink',
-          'fill-opacity': 0.5
+          'fill-opacity': 0.0
         }
       });
 
@@ -523,7 +523,7 @@
         source: 'CoverageSource6',
         paint: {
           'fill-color': '#FF0000',
-          'fill-opacity': 0.0
+          'fill-opacity': 0.5
         }
       });
 
