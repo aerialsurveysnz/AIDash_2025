@@ -20,7 +20,7 @@
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/satellite-streets-v12',
-      center: [174.30,-40.78,],
+      center: [175.85,-38.99,],
       zoom: 6.4
     });
 
@@ -93,7 +93,7 @@
           const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
                               "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
                               "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
+                              "<b>Sun Angle: </b> 25 Degrees</br>" +
                               "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
                               "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
                               "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
@@ -147,7 +147,7 @@
         source: 'CoverageSource2',
         paint: {
           'fill-color': '#FF0000',
-          'fill-opacity': 0.5
+          'fill-opacity': 0.0
         }
       });
 
@@ -187,7 +187,7 @@
           const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
                               "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
                               "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
+                              "<b>Sun Angle: </b> 25 Degrees</br>" +
                               "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
                               "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
                               "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
@@ -217,7 +217,7 @@
 
       map.addSource('ProjectArea3', {
         type: 'geojson',
-        data: 'Data/PowerCo_Manawatu_2025 - Project_Area.geojson'
+        data: 'Data/PowerCo_Horizons_2025 - Project_Area.geojson'
       });
 
       map.addLayer({
@@ -232,7 +232,7 @@
 
       map.addSource('CoverageSource3', {
         type: 'geojson',
-        data: 'Data/PowerCo_Manawatu_2025 - Captured_Area.geojson'
+        data: 'Data/PowerCo_Horizons_2025 - Captured_Area.geojson'
       });
 
       map.addLayer({
@@ -241,13 +241,13 @@
         source: 'CoverageSource3',
         paint: {
           'fill-color': '#FF0000',
-          'fill-opacity': 0.5
+          'fill-opacity': 0.0
         }
       });
 
       map.addSource('ProjectCentre3', {
         type: 'geojson',
-        data: 'Data/PowerCo_Manawatu_2025 - Imagery_Centres.geojson'
+        data: 'Data/PowerCo_Horizons_2025 - Imagery_Centres.geojson'
       });
 
       map.addLayer({
@@ -281,7 +281,7 @@
           const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
                               "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
                               "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
+                              "<b>Sun Angle: </b> 25 Degrees</br>" +
                               "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
                               "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
                               "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
@@ -335,7 +335,7 @@
         source: 'CoverageSource4',
         paint: {
           'fill-color': '#FF0000',
-          'fill-opacity': 0.5
+          'fill-opacity': 0.0
         }
       });
 
@@ -375,7 +375,7 @@
           const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
                               "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
                               "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
+                              "<b>Sun Angle: </b> 25 Degrees</br>" +
                               "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
                               "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
                               "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
@@ -399,216 +399,6 @@
         map.getCanvas().style.cursor = '';
       });
     });
-
-    map.on('load', function () {
-      // Add your sources and layers here...
-
-      map.addSource('ProjectArea5', {
-        type: 'geojson',
-        data: 'Data/Orion_Christchurch_2025 - Project_Area.geojson'
-      });
-
-      map.addLayer({
-        id: 'ProjectLayer5',
-        type: 'fill',
-        source: 'ProjectArea5',
-        paint: {
-          'fill-color': 'White',
-          'fill-opacity': 0.5
-        }
-      });
-
-      map.addSource('CoverageSource5', {
-        type: 'geojson',
-        data: 'Data/Orion_Christchurch_2025 - Captured_Area.geojson'
-      });
-
-      map.addLayer({
-        id: 'CoverageLayer5',
-        type: 'fill',
-        source: 'CoverageSource5',
-        paint: {
-          'fill-color': '#FF0000',
-          'fill-opacity': 0.5
-        }
-      });
-
-      map.addSource('ProjectCentre5', {
-        type: 'geojson',
-        data: 'Data/Orion_Christchurch_2025 - Imagery_Centres.geojson'
-      });
-
-      map.addLayer({
-        id: 'PCentre5',
-        type: 'circle',
-        source: 'ProjectCentre5',
-        paint: {
-				'circle-radius': [
-                                'interpolate',
-                                ['exponential', 1.10],
-                                ['zoom'],
-                                0,
-                                0.5,
-                                19,
-                                15
-                                ],
-                    'circle-color': 'White'
-            }
-      });
-      map.on('idle', function () {
-        const featuresPCentre = map.queryRenderedFeatures({ layers: ['PCentre5'] });
-        const featuresCoverage = map.queryRenderedFeatures({ layers: ['CoverageLayer5'] });
-        const featuresProject = map.queryRenderedFeatures({ layers: ['ProjectLayer5'] });
-
-        if (featuresPCentre.length > 0 && featuresProject.length > 0) {
-          const featurePCentre = featuresPCentre[0];
-          const featureCoverage = featuresCoverage[0];
-          const featureProject = featuresProject[0];
-
-          const coordinates = featurePCentre.geometry.coordinates.slice();
-          const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
-                              "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
-                              "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
-                              "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
-                              "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" +
-                              "<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
-                              "<b>Coverage To Date: </b>" + featureCoverage.properties.Percentage_Coverage + "%</b></br>";
-
-          var popupContent = document.createElement('div');
-          popupContent.innerHTML = description;
-
-          var popup = new mapboxgl.Popup({  closeOnClick: true })
-            .setLngLat(coordinates)
-            .setDOMContent(popupContent)
-            .addTo(map);
-        }
-      });
-
-      map.on('mouseenter', 'PCentre', function () {
-        map.getCanvas().style.cursor = 'pointer';
-      });
-
-      map.on('mouseleave', 'PCentre', function () {
-        map.getCanvas().style.cursor = '';
-      });
-    });
-
-    map.on('load', function () {
-      // Add your sources and layers here...
-
-      map.addSource('ProjectArea6', {
-        type: 'geojson',
-        data: 'Data/SWDC_Urban_2024_2025 - Project_Area.geojson'
-      });
-
-      map.addLayer({
-        id: 'ProjectLayer6',
-        type: 'fill',
-        source: 'ProjectArea6',
-        paint: {
-          'fill-color': 'Pink',
-          'fill-opacity': 0.0
-        }
-      });
-
-      map.addSource('CoverageSource6', {
-        type: 'geojson',
-        data: 'Data/SWDC_Urban_2024_2025 - Captured_Area.geojson'
-      });
-
-      map.addLayer({
-        id: 'CoverageLayer6',
-        type: 'fill',
-        source: 'CoverageSource6',
-        paint: {
-          'fill-color': '#FF0000',
-          'fill-opacity': 0.5
-        }
-      });
-
-      map.addSource('ProjectCentre6', {
-        type: 'geojson',
-        data: 'Data/SWDC_Urban_2024_2025 - Imagery_Centres.geojson'
-      });
-
-      map.addLayer({
-        id: 'PCentre6',
-        type: 'circle',
-        source: 'ProjectCentre6',
-        paint: {
-				'circle-radius': [
-                                'interpolate',
-                                ['exponential', 1.10],
-                                ['zoom'],
-                                0,
-                                0.5,
-                                19,
-                                15
-                                ],
-                    'circle-color': 'white'
-            }
-      });
-      map.on('idle', function () {
-        const featuresPCentre = map.queryRenderedFeatures({ layers: ['PCentre6'] });
-        const featuresCoverage = map.queryRenderedFeatures({ layers: ['CoverageLayer6'] });
-        const featuresProject = map.queryRenderedFeatures({ layers: ['ProjectLayer6'] });
-
-        if (featuresPCentre.length > 0 && featuresProject.length > 0) {
-          const featurePCentre = featuresPCentre[0];
-          const featureCoverage = featuresCoverage[0];
-          const featureProject = featuresProject[0];
-
-          const coordinates = featurePCentre.geometry.coordinates.slice();
-          const description = "<span style='color: #7FBA00;font-size: 14px;'><b>" + featurePCentre.properties.Proj_Name + "</b></br>" +
-                              "<span style='color: black;'><b>Project Code: </b>" + featurePCentre.properties.Project + "</br>" +
-                              "<b>Survey Type: </b>" + featurePCentre.properties.Survey_Typ + "</br>" +
-                              "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
-                              "<b>Sun Angle: </b> 30 Degrees</br>" +
-                              "<b>Imagery GSD: </b>" + featurePCentre.properties.OrthoGSD_m + "</br>" +
-                              "<b>Area: </b>" + (featurePCentre.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })+ " km²</br>" ;
-                              //"<b>Captured Area: </b>" + (featureCoverage.properties.Area).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + " km²</br>" +
-                              //"<b>Coverage To Date: </b>" + featureCoverage.properties.Percentage_Coverage + "%</b></br>";
-
-          var popupContent = document.createElement('div');
-          popupContent.innerHTML = description;
-
-          var popup = new mapboxgl.Popup({  closeOnClick: true })
-            .setLngLat(coordinates)
-            .setDOMContent(popupContent)
-            .addTo(map);
-        }
-      });
-
-      map.on('mouseenter', 'PCentre', function () {
-        map.getCanvas().style.cursor = 'pointer';
-      });
-
-      map.on('mouseleave', 'PCentre', function () {
-        map.getCanvas().style.cursor = '';
-      });
-    });
-
-    map.on('load', function () {
-      // Add your sources and layers here...
-
-      map.addSource('ProjectArea7', {
-        type: 'geojson',
-        data: 'Data/AIDash_NetworkLines_2025.geojson'
-      });
-
-      map.addLayer({
-        id: 'ProjectLayer7',
-        type: 'line',
-        source: 'ProjectArea7',
-        paint: {
-          'line-color': 'Red',
-          'line-opacity': 1
-        }
-      });
-
-    });
-
 
   </script>
 </body>

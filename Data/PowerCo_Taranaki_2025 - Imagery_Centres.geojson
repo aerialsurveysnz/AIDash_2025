@@ -11,13 +11,13 @@
         {
             "type": "Feature",
             "properties": {
-                "Project": "PGRM3232",
+                "Project": "PGRM3267",
                 "Company_Name": "PowerCo",
-                "SN_No": "SN14390",
+                "SN_No": "SN14454",
                 "Survey_Typ": "Imagery",
                 "Proj_Name": "PowerCo Taranaki",
-                "OrthoGSD_m": 0.20,
-                "Area": 6545.93
+                "OrthoGSD_m": 0.25,
+                "Area": 3381.88
             },
             "geometry": {
                 "type": "Point",

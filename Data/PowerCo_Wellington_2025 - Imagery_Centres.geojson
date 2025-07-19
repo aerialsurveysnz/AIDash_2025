@@ -11,14 +11,14 @@
         {
             "type": "Feature",
             "properties": {
-                "Project": "PGRM3232",
+                "Project": "PGRM3267",
                 "Company_Name": "PowerCo",
-                "SN_No": "SN14392",
+                "SN_No": "SN14458",
                 "Survey_Typ": "Imagery",
                 "Proj_Name": "PowerCo Wellington",
-                "OrthoGSD_m": 0.20,
-                "Area": 8078.4240268174763,
-                "Percentage_Coverage": 100.0
+                "OrthoGSD_m": 0.25,
+                "Area": 3757.00,
+                "Percentage_Coverage": 0.0
             },
             "geometry": {
                 "type": "Point",

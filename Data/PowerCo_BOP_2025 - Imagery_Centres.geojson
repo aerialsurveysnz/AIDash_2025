@@ -11,14 +11,14 @@
         {
             "type": "Feature",
             "properties": {
-                "Project": "PGRM3232",
+                "Project": "PGRM3267",
                 "Company_Name": "PowerCo",
-                "SN_No": "SN14389",
+                "SN_No": "SN14452",
                 "Survey_Typ": "Imagery",
-                "Proj_Name": "PowerCo Coro & BOP",
-                "OrthoGSD_m": 0.20,
-                "Area": 9574.1415805450542,
-                "Percentage_Coverage": 100.0
+                "Proj_Name": "PowerCo BOP",
+                "OrthoGSD_m": 0.25,
+                "Area": 5387.57,
+                "Percentage_Coverage": 0.0
             },
             "geometry": {
                 "type": "Point",
