@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "PowerCo_Horizons_2025_Refly - Imagery_Centres",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"xy_coordinate_resolution": 1e-15,
+"features": [
+{ "type": "Feature", "properties": { "Project": "PGRM", "Proj_Name": "PowerCo_Horizons_2025_Refly", "Survey_Typ": "Imagery", "OrthoGSD_m": 10.0 }, "geometry": { "type": "Point", "coordinates": [ 175.317232820208488, -39.998724613176492 ] } }
+]
+}

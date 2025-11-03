@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "name": "PowerCo_BOP_2025_Refly - Imagery_Centres",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "xy_coordinate_resolution": 1e-15,
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Project": "PGRM",
+                "Proj_Name": "PowerCo_BOP_2025_Refly",
+                "Survey_Typ": "Imagery",
+                "OrthoGSD_m": "25cm"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    175.833798545807213,
+                    -37.432513147128795
+                ]
+            }
+        }
+    ]
+}
