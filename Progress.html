@@ -76,7 +76,10 @@ const PROJECT_REF =
   (typeof window.__PROGRESS_REF__ !== "undefined" ? window.__PROGRESS_REF__ : null);
     //const PROJECT_REF = "PGRM3267-Well";
 
-    fetch('https://raw.githubusercontent.com/aerialsurveysnz/Project_management_Data/refs/heads/main/Project_Plan_Data.csv') 
+    const CSV_URL = 'https://aerialsurveysnz.github.io/Project_management_Data/Project_Plan_Data.csv';
+    fetch(CSV_URL, { cache: "no-cache" })
+
+    //fetch('https://raw.githubusercontent.com/aerialsurveysnz/Project_management_Data/refs/heads/main/Project_Plan_Data.csv') 
     //fetch('Data/Project_Plan_Data.csv')
       .then(r => r.text())
       .then(text => {
