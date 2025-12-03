@@ -12,7 +12,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Project": "PGRM",
+                "Project": "PGRM3293",
                 "Proj_Name": "PowerCo_Wellington_2025_Refly",
                 "Survey_Typ": "Imagery",
                 "OrthoGSD_m": 25.0
